@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Perfil de usuario con biografía, detalles de contacto y formulario de actualización.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background: #f0f0f0; padding: 1em; text-align: center; }
+        main { padding: 2em; }
+        .perfil-img { width: 150px; border-radius: 50%; display: block; margin: 0 auto 1em; }
+        article { margin-bottom: 2em; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 2em; }
+        th, td { border: 1px solid #ccc; padding: 0.5em; text-align: left; }
+        form { max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 1em; }
+        label { font-weight: bold; }
+        input, textarea { padding: 0.5em; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 0.7em; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Perfil de Usuario</h1>
+    </header>
+    <main>
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Imagen de perfil" class="perfil-img">
+        <article>
+            <h2>Biografía</h2>
+            <p>
+                Hola, soy Juan Pérez. Soy desarrollador web con pasión por el diseño y la tecnología. Me encanta aprender cosas nuevas y colaborar en proyectos innovadores.
+            </p>
+        </article>
+        <section>
+            <h2>Detalles de Contacto</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Información</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Email</td>
+                        <td>juan.perez@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Teléfono</td>
+                        <td>+54 9 11 1234-5678</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Actualizar Perfil</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com">
+
+                <label for="bio">Biografía:</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Escribe tu biografía"></textarea>
+
+                <button type="submit">Actualizar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Perfil de Usuario. Todos los derechos reservados.
+    </footer>
+</body>
